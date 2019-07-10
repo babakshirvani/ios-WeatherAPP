@@ -1,6 +1,6 @@
 
 <br>
-<h1> <b> Weather App for ios 9+ </b> </h1>
+<h3> <b> Weather App for ios 9+ </b> </h3>
 <br>
 <br>
 Feels-Like is a location-aware weather app. It will find out where you are in the world and query an open source weather service to retrieve the temperature and weather conditions.
