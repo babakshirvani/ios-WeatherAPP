@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainBackground" translatesAutoresizingMaskIntoConstraints="NO" id="C4E-Ub-04x">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Weather" translatesAutoresizingMaskIntoConstraints="NO" id="hp1-Yc-SQL">
+                                <rect key="frame" x="147.66666666666666" y="300.66666666666669" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="l4W-rw-Eq7"/>
+                                    <constraint firstAttribute="height" constant="80" id="lqO-Sg-bYz"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feels Like © 2019" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C1k-Bq-lQI">
+                                <rect key="frame" x="112.66666666666669" y="395.66666666666669" width="150" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Thg-Ls-Chz"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="m7A-rb-jr6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="C4E-Ub-04x" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="43Y-zv-hzJ"/>
+                            <constraint firstItem="C1k-Bq-lQI" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="BLS-yR-HSR"/>
+                            <constraint firstItem="C1k-Bq-lQI" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ChG-rn-jS5"/>
+                            <constraint firstItem="hp1-Yc-SQL" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="JOd-To-Ley"/>
+                            <constraint firstItem="C4E-Ub-04x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LMD-xs-cvG"/>
+                            <constraint firstAttribute="bottom" secondItem="C4E-Ub-04x" secondAttribute="bottom" id="MvD-FT-Bf0"/>
+                            <constraint firstItem="C4E-Ub-04x" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dxl-YG-GNq"/>
+                            <constraint firstItem="C1k-Bq-lQI" firstAttribute="top" secondItem="hp1-Yc-SQL" secondAttribute="bottom" constant="15" id="mPu-Sh-Ull"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.6305418719212"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Weather" width="42.333332061767578" height="42.333332061767578"/>
+        <image name="mainBackground" width="1111.3333740234375" height="1111.3333740234375"/>
+    </resources>
+</document>
